@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">FenaApp</string>
+    <string name="main_activity_title">This title is in English</string>
+    <string name="retailer">Retailer</string>
+    <string name="household">House Hold</string>
+    <string name="language">Select Language</string>
+    <string name="hindi">Hindi</string>
+    <string name="english">English</string>
+    <string name="discode">Enter Distributor Code</string>
+    <string name="continu">Continue</string>
+    <string name="sampling">Sampling for a</string>
+
+
+    <string name="name">Name</string>
+    <string name="email">Email Id</string>
+    <string name="num">Mobile Number</string>
+    <string name="disname">Distributor\'s Name</string>
+    <string name="agencyname">Agency\'s Name</string>
+    <string name="submit">Submit</string>
+
+
+    <string name="date">Date</string>
+    <string name="promotorname">Promotor\'s Name</string>
+    <string name="contactperno">Contact Person Name</string>
+    <string name="town">Town</string>
+    <string name="city">Select City</string>
+    <string name="state">State</string>
+    <string name="srname">Fena SR Name</string>
+    <string name="soname">Fena SO Name</string>
+    <string name="retailersdet">ENTER RETAILERS NAME</string>
+    <string name="retailername">Retailer Name</string>
+    <string name="address">Address</string>
+    <string name="productsample">Product Sampled</string>
+    <string name="powder">Fena Powder</string>
+    <string name="cake">Fena cake</string>
+    <string name="ladi">Fena Ladi</string>
+    <string name="unittt">(No. of units)</string>
+    <string name="consumerdet">ENTER CONSUMER NAME</string>
+    <string name="consumername">Retailer Name</string>
+    <string name="productsold">Product Sold</string>
+    <string name="copername">CO PERSON NAME</string>
+    <string name="addnew">Add New</string>
+
+
+    <string name="state_prompt">Choose a State</string>
+    <string-array name="india_states">
+        <item>Select State</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+</resources>

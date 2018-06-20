@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidstuff.fenaapp.RetailerDataForm">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarret"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#144ea2"
+        app:title="Retailers Data Form"
+        app:theme="@style/ToolbarStyle"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="15dp"
+                android:focusable="false"
+                android:padding="15dp"
+                android:text="@string/date"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_promotornameret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/promotorname"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_agencynameret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/agency"
+                android:drawablePadding="15dp"
+                android:hint="@string/agencyname"
+                android:padding="15dp"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_disnamenameret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/disname"
+                android:padding="15dp"
+                android:textSize="14sp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_mobnumret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/contact_no"
+                android:drawablePadding="15dp"
+                android:hint="@string/num"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_contactperret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/contactperno"
+                android:padding="15dp"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_townret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/town"
+                android:drawablePadding="15dp"
+                android:hint="@string/town"
+                android:padding="15dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/et_cityret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/city_state"
+                android:drawablePadding="15dp"
+                android:hint="@string/city"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/city_state" />
+
+                <Spinner
+                    android:id="@+id/sp_stateret"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_lowerborder"
+                    android:entries="@array/india_states"
+                    android:padding="15dp"
+                    android:prompt="@string/state_prompt"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_srnameret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/srname"
+                android:padding="15dp"
+                android:textSize="14sp"
+                 />
+
+
+            <EditText
+                android:id="@+id/et_sonameret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/soname"
+                android:padding="15dp"
+                android:textSize="14sp"
+               />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/retailersdet"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/blue" />
+
+
+            <EditText
+                android:id="@+id/et_retnameret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/retailername"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_retaddret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="15dp"
+                android:hint="@string/address"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_retnumret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/contact_no"
+                android:drawablePadding="15dp"
+                android:hint="@string/num"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/product_sample" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/productsample" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/unittt"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_lowerborder"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/tv_powderret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/powder"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_powderret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_powderret"
+                        android:src="@drawable/dots_horizontal" />
+
+
+                    <EditText
+                        android:id="@+id/et_powderret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_powderret"
+                        android:background="@drawable/et_lowerborder"
+                        android:hint="100"
+                        android:imeOptions="actionDone"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_lowerborder"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_cakeret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/et_lowerborder"
+                        android:text="@string/cake"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_cakeret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_cakeret"
+                        android:src="@drawable/dots_horizontal" />
+
+                    <EditText
+                        android:id="@+id/et_cakeret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/tv_cakeret"
+                        android:background="@drawable/et_lowerborder"
+                        android:hint="100"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_ladiret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_lowerborder"
+                    android:gravity="center"
+                    android:text="@string/ladi"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/iv_ladiret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_ladiret"
+                    android:src="@drawable/dots_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/et_ladiret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/et_lowerborder"
+                    android:hint="0"
+                    android:layout_toRightOf="@+id/tv_ladiret"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submitret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounder_corner"
+                android:padding="15dp"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

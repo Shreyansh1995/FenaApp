@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidstuff.fenaapp.ConsumerDataForm">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarcon"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#144ea2"
+        app:title="Retailers Data Form"
+        app:theme="@style/ToolbarStyle"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_datecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="15dp"
+                android:focusable="false"
+                android:padding="15dp"
+                android:text="@string/date"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_promotornamecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/promotorname"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_agencynamecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/agency"
+                android:drawablePadding="15dp"
+                android:hint="@string/agencyname"
+                android:padding="15dp"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_disnamenamecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/disname"
+                android:padding="15dp"
+                android:textSize="14sp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_mobnumcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/contact_no"
+                android:drawablePadding="15dp"
+                android:hint="@string/num"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_contactpercon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/contactperno"
+                android:padding="15dp"
+
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/et_towncon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/town"
+                android:drawablePadding="15dp"
+                android:hint="@string/town"
+                android:padding="15dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/et_citycon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/city_state"
+                android:drawablePadding="15dp"
+                android:hint="@string/city"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/city_state" />
+
+                <Spinner
+                    android:id="@+id/sp_statecon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_lowerborder"
+                    android:entries="@array/india_states"
+                    android:padding="15dp"
+                    android:prompt="@string/state_prompt"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_srnamecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/srname"
+                android:padding="15dp"
+                android:textSize="14sp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_sonamecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/soname"
+                android:padding="15dp"
+                android:textSize="14sp"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/consumerdet"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/blue" />
+
+
+            <EditText
+                android:id="@+id/et_retnamecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/consumername"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_retaddcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="15dp"
+                android:hint="@string/address"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_retnumcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/contact_no"
+                android:drawablePadding="15dp"
+                android:hint="@string/num"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/product_sample" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/productsold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/unittt"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/et_lowerborder"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_powdercon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/powder"
+        android:textSize="10sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_powdercon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_powdercon1"
+            android:src="@drawable/dots_horizontal" />
+
+
+        <EditText
+            android:id="@+id/et_powdercon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_powdercon1"
+            android:background="@drawable/et_lowerborder"
+            android:hint="100"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/et_lowerborder"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_powdercon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/powder"
+            android:textSize="10sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_powdercon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/tv_powdercon"
+            android:src="@drawable/dots_horizontal" />
+
+
+        <EditText
+            android:id="@+id/et_powdercon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_powdercon"
+            android:background="@drawable/et_lowerborder"
+            android:hint="100"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:padding="10dp"
+            android:textSize="14sp"
+             />
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+            <!--next layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/product_sample" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/productsample" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/unittt"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lowerborder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_powdercon1sam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/powder"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_powdercon1sam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/tv_powdercon1sam"
+                        android:src="@drawable/dots_horizontal" />
+
+
+                    <EditText
+                        android:id="@+id/et_powdercon1sam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_powdercon1sam"
+                        android:background="@drawable/et_lowerborder"
+                        android:hint="100"
+                        android:imeOptions="actionDone"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:textSize="14sp"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/et_lowerborder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_powderconsam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/powder"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_powderconsam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:layout_toRightOf="@+id/tv_powderconsam"
+                        android:src="@drawable/dots_horizontal" />
+
+
+                    <EditText
+                        android:id="@+id/et_powderconsam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_powderconsam"
+                        android:background="@drawable/et_lowerborder"
+                        android:hint="100"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_submitcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounder_corner"
+                android:padding="15dp"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dashboard_bg"
+    tools:context="com.androidstuff.fenaapp.RetailerQueryList">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarretlist"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#144ea2"
+        app:title="Retailer Query List"
+        app:theme="@style/ToolbarStyle"
+        app:titleTextColor="@android:color/white" >
+
+        <Button
+            android:id="@+id/btn_addnew"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:drawableLeft="@drawable/plus"
+            android:text="@string/addnew"
+            android:drawableTint="@color/colorPrimary"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_querylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

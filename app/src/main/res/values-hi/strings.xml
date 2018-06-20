@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FenaApp</string>
+    <string name="main_activity_title">यह शीर्षक हिंदी में है</string>
+    <string name="retailer">फुटकर विक्रेता</string>
+    <string name="household">हाउस होल्ड</string>
+    <string name="language">भाषा चुनिए</string>
+    <string name="hindi">हिंदी</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="discode">वितरक कोड दर्ज करें</string>
+    <string name="continu">जारी रखे</string>
+    <string name="sampling">के लिए नमूनाकरण</string>
+
+    <string name="name">नाम</string>
+    <string name="email">ईमेल आईडी</string>
+    <string name="num">मोबाइल नंबर</string>
+    <string name="disname">वितरक का नाम</string>
+    <string name="agencyname">एजेंसी का नाम</string>
+    <string name="submit">जमा करें</string>
+
+
+    <string name="date">तारीख</string>
+    <string name="promotorname">प्रमोटर का नाम</string>
+    <string name="contactperno">संपर्क व्यक्ति का नाम</string>
+    <string name="town">नगर</string>
+    <string name="city">शहर चुनें</string>
+    <string name="state">राज्य</string>
+    <string name="srname">
+फेना एसआर नाम</string>
+    <string name="soname">फेना एसओ नाम</string>
+    <string name="retailersdet">विवरणकर्ता नाम दर्ज करें</string>
+    <string name="retailername">खुदरा विक्रेता का नाम</string>
+    <string name="address">
+पता</string>
+    <string name="productsample">उत्पाद नमूना</string>
+    <string name="powder">फेना पाउडर</string>
+    <string name="cake">फेना केक</string>
+    <string name="ladi">फेना लादी</string>
+
+    <string name="unittt">(इकाइयों की संख्या)</string>
+    <string name="consumerdet">उपभोक्ता नाम दर्ज करें</string>
+
+    <string name="consumername">खुदरा विक्रेता का नाम</string>
+    <string name="productsold">उत्पाद बेच दिया</string>
+
+    <string name="copername">CO PERSON NAME</string>
+    <string name="addnew">नया जोड़ें</string>
+
+
+
+    <string name="state_prompt">Choose a State</string>
+    <string-array name="india_states">
+        <item>राज्य चुनें</item>
+        <item>अंडमान व नोकोबार द्वीप समूह</item>
+        <item>आंध्र प्रदेश</item>
+        <item>अरुणाचल प्रदेश</item>
+        <item>असम</item>
+        <item>बिहार</item>
+        <item>चंडीगढ़</item>
+        <item>छत्तीसगढ़</item>
+        <item>दादरा और नगर हवेली</item>
+        <item>दमन और दीव</item>
+        <item>दिल्ली</item>
+        <item>Goa</item>
+        <item>गोवा</item>
+        <item>हरयाणा</item>
+        <item>हिमाचल प्रदेश</item>
+        <item>जम्मू-कश्मीर</item>
+        <item>झारखंड</item>
+        <item>कर्नाटक</item>
+        <item>केरल</item>
+        <item>लक्षद्वीप</item>
+        <item>मध्य प्रदेश</item>
+        <item>महाराष्ट्र</item>
+        <item>मणिपुर</item>
+        <item>मेघालय</item>
+        <item>मिजोरम</item>
+        <item>नगालैंड</item>
+        <item>ओडिशा</item>
+        <item>पांडिचेरी</item>
+        <item>पंजाब</item>
+        <item>राजस्थान</item>
+        <item>सिक्किम</item>
+        <item>तमिलनाडु</item>
+        <item>तेलंगाना</item>
+        <item>त्रिपुरा</item>
+        <item>उत्तरांचल</item>
+        <item>उत्तर प्रदेश</item>
+        <item>पश्चिम बंगाल</item>
+    </string-array>
+
+</resources>
