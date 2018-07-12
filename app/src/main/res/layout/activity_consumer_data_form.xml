@@ -12,22 +12,29 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="#144ea2"
-        app:title="Retailers Data Form"
         app:theme="@style/ToolbarStyle"
+        app:title="Consumer Data Form"
         app:titleTextColor="@android:color/white" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="18dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
-
+            <ImageView
+                android:id="@+id/imageee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/et_datecon"
@@ -38,6 +45,7 @@
                 android:drawablePadding="15dp"
                 android:focusable="false"
                 android:padding="15dp"
+                android:visibility="gone"
                 android:text="@string/date"
                 android:textSize="14sp" />
 
@@ -52,7 +60,8 @@
                 android:drawablePadding="15dp"
                 android:hint="@string/promotorname"
                 android:padding="15dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/et_agencynamecon"
@@ -65,7 +74,7 @@
                 android:hint="@string/agencyname"
                 android:padding="15dp"
                 android:textSize="14sp"
-                />
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/et_disnamenamecon"
@@ -75,24 +84,12 @@
                 android:background="@drawable/et_lowerborder"
                 android:drawableLeft="@drawable/user_icon"
                 android:drawablePadding="15dp"
-                android:hint="@string/disname"
-                android:padding="15dp"
-                android:textSize="14sp"
-                />
-
-
-            <EditText
-                android:id="@+id/et_mobnumcon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:inputType="number"
-                android:background="@drawable/et_lowerborder"
-                android:drawableLeft="@drawable/contact_no"
-                android:drawablePadding="15dp"
-                android:hint="@string/num"
+                android:hint="@string/conname"
                 android:padding="15dp"
                 android:textSize="14sp" />
+
+
+
 
 
             <EditText
@@ -105,9 +102,19 @@
                 android:drawablePadding="15dp"
                 android:hint="@string/contactperno"
                 android:padding="15dp"
-
                 android:textSize="14sp"
-                />
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/et_retaddcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="15dp"
+                android:hint="@string/address"
+                android:padding="15dp"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_towncon"
@@ -119,7 +126,7 @@
                 android:drawablePadding="15dp"
                 android:hint="@string/town"
                 android:padding="15dp"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_citycon"
@@ -152,11 +159,22 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/et_lowerborder"
-                    android:entries="@array/india_states"
                     android:padding="15dp"
-                    android:prompt="@string/state_prompt"
                     android:textSize="14sp" />
             </LinearLayout>
+            <EditText
+                android:id="@+id/et_mobnumcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/contact_no"
+                android:drawablePadding="15dp"
+                android:hint="@string/num"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="15dp"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_srnamecon"
@@ -169,7 +187,7 @@
                 android:hint="@string/srname"
                 android:padding="15dp"
                 android:textSize="14sp"
-                />
+                android:visibility="gone"/>
 
 
             <EditText
@@ -183,8 +201,7 @@
                 android:hint="@string/soname"
                 android:padding="15dp"
                 android:textSize="14sp"
-                />
-
+                android:visibility="gone"/>
 
 
             <TextView
@@ -195,7 +212,8 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/consumerdet"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/blue" />
+                android:textColor="@color/blue"
+                android:visibility="gone"/>
 
 
             <EditText
@@ -208,20 +226,11 @@
                 android:drawablePadding="15dp"
                 android:hint="@string/consumername"
                 android:padding="15dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:visibility="gone"/>
 
 
-            <EditText
-                android:id="@+id/et_retaddcon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/et_lowerborder"
-                android:drawableLeft="@drawable/address_book"
-                android:drawablePadding="15dp"
-                android:hint="@string/address"
-                android:padding="15dp"
-                android:textSize="14sp" />
+
 
             <EditText
                 android:id="@+id/et_retnumcon"
@@ -234,6 +243,7 @@
                 android:hint="@string/num"
                 android:inputType="number"
                 android:padding="15dp"
+                android:visibility="gone"
                 android:textSize="14sp" />
 
 
@@ -241,9 +251,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="18dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
 
@@ -269,107 +280,156 @@
                     android:textSize="10sp" />
             </LinearLayout>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:weightSum="2"
-    android:orientation="horizontal"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
-    android:layout_marginTop="10dp">
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@drawable/et_lowerborder"
-        android:orientation="horizontal">
-
-    <TextView
-        android:id="@+id/tv_powdercon1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:padding="15dp"
-        android:text="@string/powder"
-        android:textSize="10sp" />
 
 
-        <ImageView
-            android:id="@+id/iv_powdercon1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_centerVertical="true"
-            android:visibility="gone"
-            android:layout_alignParentRight="true"
-            android:layout_toRightOf="@+id/tv_powdercon1"
-            android:src="@drawable/dots_horizontal" />
+
+            <EditText
+                android:id="@+id/et_powdercon1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/product_sample"
+                android:drawablePadding="15dp"
+                android:hint="@string/powder"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="14sp" />
 
 
-        <EditText
-            android:id="@+id/et_powdercon1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/tv_powdercon1"
-            android:background="@drawable/et_lowerborder"
-            android:hint="100"
-            android:inputType="number"
-            android:imeOptions="actionDone"
-            android:padding="10dp"
-            android:textSize="14sp" />
+            <EditText
+                android:id="@+id/et_powdercon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/product_sample"
+                android:drawablePadding="15dp"
+                android:hint="@string/powdergram"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="14sp" />
 
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/et_lowerborder"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_powdercon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="@string/powder"
-            android:textSize="10sp" />
 
 
-        <ImageView
-            android:id="@+id/iv_powdercon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:visibility="gone"
-            android:layout_toRightOf="@+id/tv_powdercon"
-            android:src="@drawable/dots_horizontal" />
 
 
-        <EditText
-            android:id="@+id/et_powdercon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/tv_powdercon"
-            android:background="@drawable/et_lowerborder"
-            android:hint="100"
-            android:inputType="number"
-            android:imeOptions="actionDone"
-            android:padding="10dp"
-            android:textSize="14sp"
-             />
 
 
-    </RelativeLayout>
-</LinearLayout>
+
+<!--product sold-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lowerborder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_powdercon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/powder"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_powdercon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_powdercon1"
+                        android:src="@drawable/dots_horizontal"
+                        android:visibility="gone" />
+
+
+                    <EditText
+                        android:id="@+id/et_powdercon11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_powdercon1"
+                        android:background="@drawable/et_lowerborder"
+                        android:hint="100"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_lowerborder"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_powdercon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/et_powderconn"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/powdergram"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_powdercon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_powdercon"
+                        android:src="@drawable/dots_horizontal"
+                        android:visibility="gone" />
+
+
+                    <EditText
+                        android:id="@+id/et_powderconn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_powdercon"
+                        android:background="@drawable/et_lowerborder"
+                        android:hint="100"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--product sold completed-->
+
+
+
+
+
 
 
             <!--next layout-->
@@ -377,9 +437,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="18dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
 
@@ -406,14 +467,47 @@
             </LinearLayout>
 
 
+
+
+
+            <EditText
+                android:id="@+id/et_powdercon1sam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/product_sample"
+                android:drawablePadding="15dp"
+                android:hint="@string/powdersam"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_powderconsam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/product_sample"
+                android:drawablePadding="15dp"
+                android:hint="@string/powdersam5"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="2"
-                android:orientation="horizontal"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -429,7 +523,7 @@
                         android:layout_centerVertical="true"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="@string/powder"
+                        android:text="@string/powdersam"
                         android:textSize="10sp" />
 
 
@@ -437,26 +531,25 @@
                         android:id="@+id/iv_powdercon1sam"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
-                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@+id/tv_powdercon1sam"
-                        android:src="@drawable/dots_horizontal" />
+                        android:src="@drawable/dots_horizontal"
+                        android:visibility="gone" />
 
 
                     <EditText
-                        android:id="@+id/et_powdercon1sam"
+                        android:id="@+id/et_powdercon1samm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/tv_powdercon1sam"
                         android:background="@drawable/et_lowerborder"
                         android:hint="100"
                         android:imeOptions="actionDone"
-                        android:padding="10dp"
                         android:inputType="number"
-                        android:textSize="14sp"
-                        />
+                        android:padding="10dp"
+                        android:textSize="14sp" />
 
 
                 </RelativeLayout>
@@ -464,8 +557,8 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
                     android:background="@drawable/et_lowerborder"
                     android:orientation="horizontal">
 
@@ -476,7 +569,7 @@
                         android:layout_centerVertical="true"
                         android:gravity="center"
                         android:padding="15dp"
-                        android:text="@string/powder"
+                        android:text="@string/powdersam5"
                         android:textSize="10sp" />
 
 
@@ -484,31 +577,81 @@
                         android:id="@+id/iv_powderconsam"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
-                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
                         android:layout_toRightOf="@+id/tv_powderconsam"
-                        android:src="@drawable/dots_horizontal" />
+                        android:src="@drawable/dots_horizontal"
+                        android:visibility="gone" />
 
 
                     <EditText
-                        android:id="@+id/et_powderconsam"
+                        android:id="@+id/et_powderconsamm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/tv_powderconsam"
                         android:background="@drawable/et_lowerborder"
                         android:hint="100"
-                        android:inputType="number"
                         android:imeOptions="actionDone"
+                        android:inputType="number"
                         android:padding="10dp"
-                        android:textSize="14sp"
-                        />
+                        android:textSize="14sp" />
 
 
                 </RelativeLayout>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounder_corner"
+                    android:text="@string/image1" />
+
+                <Button
+                    android:id="@+id/btn_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounder_corner"
+                    android:text="@string/image2" />
+
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_signaturecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounder_corner"
+                android:padding="15dp"
+                android:text="@string/signature"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/btn_submitcon"
@@ -524,7 +667,6 @@
                 android:textAllCaps="true"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/white" />
-
 
 
         </LinearLayout>

@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">FenaApp</string>
-    <string name="main_activity_title">This title is in English</string>
+    <string name="app_name">BTL</string>
+    <string name="app_namee">BTL</string>
     <string name="retailer">Retailer</string>
     <string name="household">House Hold</string>
     <string name="language">Select Language</string>
@@ -8,7 +8,7 @@
     <string name="english">English</string>
     <string name="discode">Enter Distributor Code</string>
     <string name="continu">Continue</string>
-    <string name="sampling">Sampling for a</string>
+    <string name="sampling">BTL Sampling</string>
 
 
     <string name="name">Name</string>
@@ -17,6 +17,11 @@
     <string name="disname">Distributor\'s Name</string>
     <string name="agencyname">Agency\'s Name</string>
     <string name="submit">Submit</string>
+    <string name="signature">Signature</string>
+    <string name="clear_pad">Clear</string>
+    <string name="save_signature">Save</string>
+
+    <string name="conname">Consumer\'s Name</string>
 
 
     <string name="date">Date</string>
@@ -31,7 +36,13 @@
     <string name="retailername">Retailer Name</string>
     <string name="address">Address</string>
     <string name="productsample">Product Sampled</string>
-    <string name="powder">Fena Powder</string>
+    <string name="powder">Fena Powder 1 Kg</string>
+    <string name="powdergram">Fena Powder 500 gram</string>
+
+
+    <string name="powdersam">Fena Powder ₹10</string>
+    <string name="powdersam5">Fena Cake ₹5</string>
+
     <string name="cake">Fena cake</string>
     <string name="ladi">Fena Ladi</string>
     <string name="unittt">(No. of units)</string>
@@ -40,6 +51,15 @@
     <string name="productsold">Product Sold</string>
     <string name="copername">CO PERSON NAME</string>
     <string name="addnew">Add New</string>
+
+
+    <string name="image1">Image 1</string>
+    <string name="image2">Image 2</string>
+    <string name="image3">Image 3</string>
+    <string name="image4">Image 4</string>
+    <string name="image5">Image 5</string>
+
+    <string name="tnq">Total no. of queries:</string>
 
 
     <string name="state_prompt">Choose a State</string>

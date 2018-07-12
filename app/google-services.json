@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "756610219815",
+    "firebase_url": "https://fena-3fed4.firebaseio.com",
+    "project_id": "fena-3fed4",
+    "storage_bucket": "fena-3fed4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756610219815:android:7c54e2b5cc0846df",
+        "android_client_info": {
+          "package_name": "com.androidstuff.fenaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756610219815-6f0325begcafj2em15fctiv74kofe732.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidstuff.fenaapp",
+            "certificate_hash": "914a8b5826bb316e6d9d6b50a3fd2b952c1d8253"
+          }
+        },
+        {
+          "client_id": "756610219815-6n5ov23r5h0ahkph1dl03tnktmtajo5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTa7JZeydQMmFdBnRW1GlagKU6glUPqcA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756610219815-6n5ov23r5h0ahkph1dl03tnktmtajo5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

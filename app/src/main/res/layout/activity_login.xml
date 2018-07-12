@@ -8,6 +8,15 @@
     android:orientation="vertical"
     tools:context="com.androidstuff.fenaapp.LoginActivity">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -133,6 +142,7 @@
         android:background="@drawable/et_border"
         android:hint="@string/discode"
         android:padding="15dp"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColorHint="#144ea2" />
 
@@ -152,4 +162,6 @@
         android:textColor="@android:color/white" />
 
 
+    </LinearLayout>
+</ScrollView>
 </LinearLayout>

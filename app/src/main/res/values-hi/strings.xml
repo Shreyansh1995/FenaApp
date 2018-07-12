@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FenaApp</string>
-    <string name="main_activity_title">यह शीर्षक हिंदी में है</string>
+    <string name="app_name">बी.टी.एल</string>
+    <string name="app_namee">बी.टी.एल</string>
     <string name="retailer">फुटकर विक्रेता</string>
     <string name="household">हाउस होल्ड</string>
     <string name="language">भाषा चुनिए</string>
@@ -9,7 +9,7 @@
     <string name="english">अंग्रेज़ी</string>
     <string name="discode">वितरक कोड दर्ज करें</string>
     <string name="continu">जारी रखे</string>
-    <string name="sampling">के लिए नमूनाकरण</string>
+    <string name="sampling">बीटीएल नमूनाकरण</string>
 
     <string name="name">नाम</string>
     <string name="email">ईमेल आईडी</string>
@@ -17,6 +17,12 @@
     <string name="disname">वितरक का नाम</string>
     <string name="agencyname">एजेंसी का नाम</string>
     <string name="submit">जमा करें</string>
+    <string name="signature">हस्ताक्षर</string>
+
+    <string name="conname">उपभोक्ता नाम</string>
+
+    <string name="clear_pad"> मिटाना</string>
+    <string name="save_signature">सुरक्षित</string>
 
 
     <string name="date">तारीख</string>
@@ -33,7 +39,13 @@
     <string name="address">
 पता</string>
     <string name="productsample">उत्पाद नमूना</string>
-    <string name="powder">फेना पाउडर</string>
+    <string name="powder">फेना पाउडर 1 किग्रा</string>
+    <string name="powdergram">फेना पाउडर 500 ग्राम</string>
+
+
+    <string name="powdersam">फेना पाउडर ₹ 10</string>
+    <string name="powdersam5">फेना केक ₹ 5</string>
+
     <string name="cake">फेना केक</string>
     <string name="ladi">फेना लादी</string>
 
@@ -45,6 +57,14 @@
 
     <string name="copername">CO PERSON NAME</string>
     <string name="addnew">नया जोड़ें</string>
+
+    <string name="image1">छवि 1</string>
+    <string name="image2">छवि 2</string>
+    <string name="image3">छवि 3</string>
+    <string name="image4">छवि 4</string>
+    <string name="image5">छवि 5</string>
+
+    <string name="tnq">सूची का कुल संख्या:</string>
 
 
 

@@ -12,103 +12,178 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="#144ea2"
-        app:title="Consumer Details Form"
         app:theme="@style/ToolbarStyle"
+        app:title="Promotor Details Form"
         app:titleTextColor="@android:color/white" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp">
-
-   <EditText
-       android:id="@+id/et_consumername"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-      android:hint="@string/name"
-       android:drawableLeft="@drawable/user_icon"
-       android:drawablePadding="10dp"
-       android:paddingBottom="15dp"
-       android:textSize="14sp"
-       android:textColor="@android:color/black" />
-
-
-
-        <EditText
-            android:id="@+id/et_consumeremail"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-       android:hint="@string/email"
-            android:drawableLeft="@drawable/address_book"
-            android:drawablePadding="10dp"
-            android:paddingBottom="15dp"
-            android:layout_marginTop="5dp"
-            android:textSize="14sp"
-            android:textColor="@android:color/black"
-            />
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_consumername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="10dp"
+                android:hint="@string/name"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
 
 
-        <EditText
-            android:id="@+id/et_consumernum"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-          android:hint="@string/num"
-            android:drawableLeft="@drawable/contact_no"
-            android:drawablePadding="10dp"
-            android:paddingBottom="15dp"
-            android:layout_marginTop="5dp"
-            android:textSize="14sp"
-            android:textColor="@android:color/black"
-            />
+            <EditText
+                android:id="@+id/et_consumeremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="10dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="15dp"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
 
 
-        <EditText
-            android:id="@+id/et_consumerdisname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-           android:hint="@string/disname"
-            android:drawableLeft="@drawable/user_icon"
-            android:drawablePadding="10dp"
-            android:paddingBottom="15dp"
-            android:layout_marginTop="5dp"
-            android:textSize="14sp"
-            android:textColor="@android:color/black"
-            />
+            <EditText
+                android:id="@+id/et_consumernum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/contact_no"
+                android:drawablePadding="10dp"
+                android:hint="@string/num"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/et_consumeragencyname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/agencyname"
-            android:drawableLeft="@drawable/agency"
-            android:drawablePadding="10dp"
-            android:paddingBottom="15dp"
-            android:layout_marginTop="5dp"
-            android:textSize="14sp"
-            android:textColor="@android:color/black"
-            />
+            <EditText
+                android:id="@+id/et_consumertown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/town"
+                android:drawablePadding="10dp"
+                android:hint="@string/town"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
 
-
-<Button
-    android:id="@+id/btn_consumerdetsubmit"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/rounder_corner"
-    android:layout_marginTop="40dp"
-    android:text="@string/submit"
-    android:padding="15dp"
-    android:textAppearance="?android:textAppearanceMedium"
-    android:textAllCaps="true"
-    android:textColor="@android:color/white" />
+            <EditText
+                android:id="@+id/et_consumercity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/city_state"
+                android:drawablePadding="10dp"
+                android:hint="@string/city"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
 
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7.6dp"
+                    android:src="@drawable/city_state" />
+
+                <Spinner
+                    android:id="@+id/sp_consumerstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_lowerborder"
+                    android:entries="@array/india_states"
+                    android:padding="15dp"
+                    android:prompt="@string/state_prompt"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_consumerdisname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="10dp"
+
+                android:focusable="false"
+                android:hint="@string/disname"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_consumeragencyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/agency"
+                android:drawablePadding="10dp"
+
+                android:hint="@string/agencyname"
+                android:paddingBottom="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_consumersrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="10dp"
+                android:hint="@string/srname"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_consumersoname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="10dp"
+                android:hint="@string/soname"
+                android:paddingBottom="15dp"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btn_consumerdetsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounder_corner"
+                android:padding="15dp"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -39,7 +39,8 @@
                 android:focusable="false"
                 android:padding="15dp"
                 android:text="@string/date"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:visibility="gone"/>
 
 
             <EditText
@@ -52,7 +53,8 @@
                 android:drawablePadding="15dp"
                 android:hint="@string/promotorname"
                 android:padding="15dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:visibility="gone"/>
 
             <EditText
                 android:id="@+id/et_agencynameret"
@@ -65,6 +67,7 @@
                 android:hint="@string/agencyname"
                 android:padding="15dp"
                 android:textSize="14sp"
+                android:visibility="gone"
                 />
 
             <EditText
@@ -78,20 +81,11 @@
                 android:hint="@string/disname"
                 android:padding="15dp"
                 android:textSize="14sp"
+                android:visibility="gone"
                 />
 
 
-            <EditText
-                android:id="@+id/et_mobnumret"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/et_lowerborder"
-                android:drawableLeft="@drawable/contact_no"
-                android:drawablePadding="15dp"
-                android:hint="@string/num"
-                android:padding="15dp"
-                android:textSize="14sp" />
+
 
 
             <EditText
@@ -105,7 +99,30 @@
                 android:hint="@string/contactperno"
                 android:padding="15dp"
                 android:textSize="14sp"
+                android:visibility="gone"
                 />
+            <EditText
+                android:id="@+id/et_retnameret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="15dp"
+                android:hint="@string/retailername"
+                android:padding="15dp"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/et_retaddret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="15dp"
+                android:hint="@string/address"
+                android:padding="15dp"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_townret"
@@ -150,11 +167,22 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/et_lowerborder"
-                    android:entries="@array/india_states"
                     android:padding="15dp"
-                    android:prompt="@string/state_prompt"
                     android:textSize="14sp" />
             </LinearLayout>
+            <EditText
+                android:id="@+id/et_mobnumret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/contact_no"
+                android:drawablePadding="15dp"
+                android:hint="@string/num"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="15dp"
+                android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_srnameret"
@@ -167,6 +195,7 @@
                 android:hint="@string/srname"
                 android:padding="15dp"
                 android:textSize="14sp"
+                android:visibility="gone"
                  />
 
 
@@ -181,6 +210,7 @@
                 android:hint="@string/soname"
                 android:padding="15dp"
                 android:textSize="14sp"
+                android:visibility="gone"
                />
 
 
@@ -192,33 +222,14 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/retailersdet"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/blue" />
+                android:textColor="@color/blue"
+                android:visibility="gone"/>
 
 
-            <EditText
-                android:id="@+id/et_retnameret"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/et_lowerborder"
-                android:drawableLeft="@drawable/user_icon"
-                android:drawablePadding="15dp"
-                android:hint="@string/retailername"
-                android:padding="15dp"
-                android:textSize="14sp" />
 
 
-            <EditText
-                android:id="@+id/et_retaddret"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/et_lowerborder"
-                android:drawableLeft="@drawable/address_book"
-                android:drawablePadding="15dp"
-                android:hint="@string/address"
-                android:padding="15dp"
-                android:textSize="14sp" />
+
+
 
             <EditText
                 android:id="@+id/et_retnumret"
@@ -230,7 +241,8 @@
                 android:drawablePadding="15dp"
                 android:hint="@string/num"
                 android:padding="15dp"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:visibility="gone"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -262,7 +274,49 @@
                     android:layout_marginLeft="10dp"
                     android:text="@string/unittt"
                     android:textSize="10sp" />
+
+
             </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_powderret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="15dp"
+                android:hint="@string/powder"
+                android:padding="15dp"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_cakeret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="15dp"
+                android:hint="@string/cake"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_ladiret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_lowerborder"
+                android:drawableLeft="@drawable/address_book"
+                android:drawablePadding="15dp"
+                android:hint="@string/ladi"
+                android:padding="15dp"
+                android:inputType="number"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -271,13 +325,15 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="3"
+                android:visibility="gone">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/et_lowerborder"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    >
 
 
                     <TextView
@@ -286,6 +342,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:gravity="center"
+                        android:visibility="gone"
                         android:text="@string/powder"
                         android:textSize="10sp" />
 
@@ -295,12 +352,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:visibility="gone"
                         android:layout_toRightOf="@+id/tv_powderret"
                         android:src="@drawable/dots_horizontal" />
 
 
+
+
+
                     <EditText
-                        android:id="@+id/et_powderret"
+                        android:id="@+id/et_powderrett"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/tv_powderret"
@@ -337,7 +398,7 @@
                         android:src="@drawable/dots_horizontal" />
 
                     <EditText
-                        android:id="@+id/et_cakeret"
+                        android:id="@+id/et_cakerett"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
@@ -372,7 +433,7 @@
 
 
                 <EditText
-                    android:id="@+id/et_ladiret"
+                    android:id="@+id/et_ladirett"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -383,14 +444,59 @@
                     android:padding="10dp"
                     android:textSize="14sp"
                     />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
+                <Button
+                    android:id="@+id/btn_image1ret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounder_corner"
+                    android:text="@string/image1" />
 
-
+                <Button
+                    android:id="@+id/btn_image2ret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounder_corner"
+                    android:text="@string/image2" />
 
 
 
             </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_signatureret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounder_corner"
+                android:padding="15dp"
+                android:text="@string/signature"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/btn_submitret"
